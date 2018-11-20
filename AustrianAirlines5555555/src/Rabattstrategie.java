@@ -1,6 +1,9 @@
-import java.util.GregorianCalendar;
-
 public abstract class Rabattstrategie {
+
+	public Rabattstrategie(String bezeichnung) {
+		super();
+		this.bezeichnung = bezeichnung;
+	}
 
 	private String bezeichnung;
 
@@ -13,9 +16,6 @@ public abstract class Rabattstrategie {
 	public void setBezeichnung(String bezeichnung) {
 		this.bezeichnung = bezeichnung;
 	}
-
 	
-	public abstract double getReduzierterPreis(double regulärpreis);
-	
-	
+	public abstract double getReduzierterPreis(double preis);
 }
